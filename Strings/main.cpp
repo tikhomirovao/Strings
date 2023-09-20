@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+Ôªø#define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 #include<ctype.h>
 #include<Windows.h>
@@ -13,26 +13,26 @@ bool is_palindrome(const char str[]);
 void main()
 {
 	setlocale(LC_ALL, "");
-	cout << '®' - '∏' << endl;
+	cout << '–Å' - '—ë' << endl;
 	'\0';
 	//char str[] = { 'H', 'e', 'l', 'l', 'o', 0 };
 	/*char str[] = "Hello";
 	cout << str << endl;*/
 
 	const int SIZE = 256;
-	char str[SIZE] = "¿„ÂÌÚËÌ‡ Ï‡ÌËÚ ÌÂ„‡";
-	//cout << "¬‚Â‰ËÚÂ ÒÚÓÍÛ: ";
+	char str[SIZE] = "–ê—Ä–≥–µ–Ω—Ç–∏–Ω–∞ –º–∞–Ω–∏—Ç –Ω–µ–≥—Ä–∞";
+	//cout << "–í–≤–µ–¥–∏—Ç–µ —Å—Ç—Ä–æ–∫—É: ";
 	//cin >> str;
 	//SetConsoleCP(1251);
 	//cin.getline(str, SIZE);
 	//SetConsoleCP(866);
 	cout << str << endl;
-	cout << "–‡ÁÏÂ ‚‚Â‰ÂÌÌÓÈ ÒÚÓÍË: " << StringLenght(str) << endl;
+	cout << "–†–∞–∑–º–µ—Ä –≤–≤–µ–¥–µ–Ω–Ω–æ–π —Å—Ç—Ä–æ–∫–∏: " << StringLenght(str) << endl;
 	//cout << to_upper(str) << endl;
 	//cout << to_lower(str) << endl;
 	cout << typeid(str).name() << endl;
 	cout << shrink(str) << endl;
-	cout << "—ÚÓÍ‡ " << (is_palindrome(str) ? "" : "Õ≈ ") << "ˇ‚ÎˇÂÚÒˇ Ô‡ÎËÌ‰ÓÏÓÏ" << endl;
+	cout << "–°—Ç—Ä–æ–∫–∞ " << (is_palindrome(str) ? "" : "–ù–ï ") << "—è–≤–ª—è–µ—Ç—Å—è –ø–∞–ª–∏–Ω–¥—Ä–æ–º–æ–º" << endl;
 	cout << str << endl;
 }
 int StringLenght(const char str[])
@@ -46,8 +46,8 @@ char* to_upper(char str[])
 	for (int i = 0; str[i]; i++)
 	{
 		/*if (str[i] >= 'a' && str[i] <= 'z')str[i] -= 32;
-		if(str[i]>='‡' && str[i]<='ˇ')str[i] -= 32;
-		if (str[i] == '∏')str[i] -= 16;*/
+		if(str[i]>='–∞' && str[i]<='—è')str[i] -= 32;
+		if (str[i] == '—ë')str[i] -= 16;*/
 		str[i] = toupper(str[i]);
 	}
 	return str;
@@ -56,8 +56,8 @@ char* to_upper(char str[])
 	for (int i = 0; str[i]; i++)
 	{
 		/*if (str[i] >= 'A' && str[i] <= 'Z')str[i] += 32;
-		if(str[i]>='¿' && str[i]<='ﬂ')str[i] += 32;
-		if (str[i] == '®')str[i] += 16;*/
+		if(str[i]>='–ê' && str[i]<='–Ø')str[i] += 32;
+		if (str[i] == '–Å')str[i] += 16;*/
 		str[i] = tolower(str[i]);
 	}
 	return str;
